@@ -17,9 +17,10 @@ block content
         //    label(for=scope) #{scope}
         //    br
         var ob = JSON.parse(result)
-        for(var prop in ob)
-             p #{prop}: #{ob[prop]}
-
+        //for(var prop in ob)
+        //     p #{prop}: #{ob[prop]}
+        #{ob.stringify()}
+        
         p.
             Do you want to be asked next time when this application wants to access your data? The application will
             not be able to ask for more permissions without your consent.
