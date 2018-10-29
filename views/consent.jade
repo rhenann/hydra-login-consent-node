@@ -12,17 +12,17 @@ block content
         p.
             Hi #{user}, application <strong>#{client.client_name || client.client_id}</strong> wants access resources on your behalf and to:
 
-        //each scope in requested_scope
-        //    input(type="checkbox",id=scope,value=scope,name="grant_scope")
-        //    label(for=scope) #{scope}
-        //    br
+        each scope in requested_scope
+            input(type="checkbox",id=scope,value=scope,name="grant_scope")
+            label(for=scope) #{scope}
+            br
         //var ob = JSON.parse(result)
         //for(var prop in ob)
         //     p #{prop}: #{ob[prop]}
         //#{ob.stringify()}
         //script
         //    sunburst(!{JSON.stringify(result)})
-        #{resultado}
+        //#{resultado}
         p.
             Do you want to be asked next time when this application wants to access your data? The application will
             not be able to ask for more permissions without your consent.
