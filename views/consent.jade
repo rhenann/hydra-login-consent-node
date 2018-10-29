@@ -16,11 +16,13 @@ block content
         //    input(type="checkbox",id=scope,value=scope,name="grant_scope")
         //    label(for=scope) #{scope}
         //    br
-        var ob = JSON.parse(result)
+        //var ob = JSON.parse(result)
         //for(var prop in ob)
         //     p #{prop}: #{ob[prop]}
-        #{ob.stringify()}
-        
+        //#{ob.stringify()}
+        script
+            sunburst(!{JSON.stringify(result)})
+
         p.
             Do you want to be asked next time when this application wants to access your data? The application will
             not be able to ask for more permissions without your consent.
