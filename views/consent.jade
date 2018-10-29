@@ -16,7 +16,7 @@ block content
         //    input(type="checkbox",id=scope,value=scope,name="grant_scope")
         //    label(for=scope) #{scope}
         //    br
-        -var ob = JSON.parse(json)
+        -var ob = JSON.parse(result)
         -for(var prop in ob)
              p #{prop}: #{ob[prop]}
 
