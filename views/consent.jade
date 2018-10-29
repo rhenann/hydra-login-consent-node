@@ -16,6 +16,9 @@ block content
         //    input(type="checkbox",id=scope,value=scope,name="grant_scope")
         //    label(for=scope) #{scope}
         //    br
+        -var ob = JSON.parse(json)
+        -for(var prop in ob)
+             p #{prop}: #{ob[prop]}
 
         p.
             Do you want to be asked next time when this application wants to access your data? The application will
