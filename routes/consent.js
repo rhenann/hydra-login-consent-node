@@ -53,7 +53,7 @@ router.get('/', csrfProtection, function (req, res, next) {
         requested_scope: response.requested_scope,
         user: response.subject,
         client: response.client,
-        response: JSON.stringify(response)
+        resultado: JSON.stringify(response)
       });
     })
     // This will handle any error that happens when making HTTP calls to hydra
